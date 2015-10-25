@@ -20,32 +20,31 @@ to use the script, follow the follwoing steps:
 This will generate a file named tidy_data.txt that contains the cleaned data.
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+The cleaning script takes just the mean and standard deviation measurements from the orginal data set. It the addes the subject and acticity labels for each row of observations. Finally it aggregates the data by averaging them across subject and activity. For a more detailed description of how the code works, see the [readme file](README.md)
 
 ##Description of the variables in the tiny_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
+The resulting tiny data set contains a row for each subject and activity pair. There were 30 subjects and 6 activities, resulting in 180 rows of data.
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+There are 68 variable, described below.
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+###Subject
+This is a numeric variable from 1 - 30 indicating which subject the measurements are for.
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+###Activity
+This is an activity label, with the following six possibilities:
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+###Measurement Variables
+There are 66 measurement variable from the accelerometer and gyroscope 3-axial raw signals. Each name is divided into 4 parts, each separated by a dash ('-').
 
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
+The for parts are:
+1. "time"" or "frequency"" indicates which domain signals the observation is for.
+2. The type of measurement 
+3. "mean" or "std" to indicate if this was a mean value or standard deviation
+4. (optional) indicating the axis of the observation (if needed)
 
-##Sources
-Sources you used if any, otherise leave out.
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
