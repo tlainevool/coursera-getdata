@@ -13,7 +13,7 @@ Reads in from the features.txt file which has all the names of each column of th
 Creates a column selector which can be used select just the columns that have "mean()" or "std()" in the names. This column selector is passed to the getMeasurementData function which will read each of the data sets. Finally column names are generated and added to the data frame.
 
 ### getAggregateData
-This method takes in the full set of measurements and averagres the data grouped by subject and activity. It then orderes the data by subject and activity to make it easier to read.
+This method takes in the full set of measurements and averages the data grouped by subject and activity. It then orders the data by subject and activity to make it easier to read.
 
 ### getMeasurementData
 Reads data from each of the train and test data sets and merges them together
@@ -39,5 +39,4 @@ Creates a vector that can be used to select the desired columns. The vectore wil
 
 ### makeFileName
 A utility function to ease the creation of file names in the correct data directory.
-### getActivitiesColumn
 

@@ -49,7 +49,7 @@ getDataFromDataSet <- function (dataSetName, columnSelector) {
         fileName <- makeFileName(dataSetName, "/X_", dataSetName, ".txt")
         measurements <- read.fwf(fileName, widths = columnSelector)
         activities = getActivitiesColumn(dataSetName)
-        subjects = getSubjects(dataSetName)
+        subjects = getSubjectsColumn(dataSetName)
         cbind(subjects, activities, measurements)
 }
 
@@ -63,7 +63,7 @@ getActivitiesColumn <- function(dataSetName) {
 }
 
 #Read the data from the subject file for a particular data set
-getSubjects <- function (dataSetName) {
+getSubjectsColumn <- function (dataSetName) {
         readLines(makeFileName(dataSetName, "/subject_", dataSetName, ".txt"))
 }
 
