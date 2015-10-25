@@ -20,7 +20,7 @@ to use the script, follow the follwoing steps:
 This will generate a file named tidy_data.txt that contains the cleaned data.
 
 ###Cleaning of the data
-The cleaning script takes just the mean and standard deviation measurements from the orginal data set. It the addes the subject and acticity labels for each row of observations. Finally it aggregates the data by averaging them across subject and activity. For a more detailed description of how the code works, see the [readme file](README.md)
+The cleaning script takes just the mean and standard deviation measurements from the orginal data set. It then adds the subject and activity labels for each row of observations. Finally it aggregates the data by averaging them across subject and activity. For a more detailed description of how the code works, see the [readme file](README.md)
 
 ##Description of the variables in the tiny_data.txt file
 The resulting tiny data set contains a row for each subject and activity pair. There were 30 subjects and 6 activities, resulting in 180 rows of data.
